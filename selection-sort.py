@@ -1,3 +1,4 @@
+import time 
 
 def findSmallest (arr):
     smallest = arr[0]
@@ -18,6 +19,9 @@ def selectionSort (arr) :
 
 arr = [5,3,6,2,10,-1,-10,0]
 
-print(selectionSort(arr))
+start = time.perf_counter()
+result = selectionSort(arr)
+end = time.perf_counter()
 
-    
+print (result)
+print ("Timepo:", end-start, "segundos")
